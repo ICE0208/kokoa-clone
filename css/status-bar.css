@@ -6,6 +6,8 @@
 
 .status-bar__column {
     width: 33%;
+    display: flex;
+    align-items: center;
 }
 
 .status-bar__column:first-child span {
@@ -23,6 +25,10 @@
     align-items: center;
 }
 
-.status-bar__column:last-child .fa-battery-full {
+.status-bar ion-icon {
+    font-size: 21px;
+}
+
+.status-bar__column:last-child #battery {
     margin: 0px 3px;
 }
