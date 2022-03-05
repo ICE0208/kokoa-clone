@@ -1,0 +1,20 @@
+#friends-display-link {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#friends-display-link ion-icon {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#friends-display-link span {
+    padding: 0px 5px;
+}
+
+#friends-display-link ion-icon:last-child {
+    padding-top: 2px;
+}
