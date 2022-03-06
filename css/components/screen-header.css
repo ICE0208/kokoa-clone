@@ -4,11 +4,15 @@
     align-items: center;
     padding: var(--horizontal-space);
     padding-top: 40px;
-    opacity: 90%;
+    opacity: 100%;
     font-size: 28px;
     font-weight: 600;
     width: 100%;
     box-sizing: border-box;
+    position: sticky;
+    box-sizing: border-box;
+    top: 31px;
+    background-color: rgb(255, 255, 255);
 }
 
 .screen-header__header__icons span {
