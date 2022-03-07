@@ -43,6 +43,19 @@
     margin-top: 14px;
 }
 
+.user-component__notification--hidden {
+    font-size: 14px;
+    font-weight: 300;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    margin-top: 14px;
+    opacity: 0;
+}
+
 
 .user-component__avatar--xl {
     width: 65px;
