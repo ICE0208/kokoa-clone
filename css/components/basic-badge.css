@@ -1,0 +1,13 @@
+.basic-badge {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -5px;
+    bottom: 30px;
+    z-index: 1;
+}
