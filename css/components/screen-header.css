@@ -13,8 +13,13 @@
     box-sizing: border-box;
     top: 31px;
     background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .screen-header__header__icons span {
     margin-left: 15px;
+}
+
+.screen-header__header__icons span:last-child {
+    position: relative;
 }

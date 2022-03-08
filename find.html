@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - KoKoa Clone</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- <i class="fa-solid fa-wifi"></i> -->
+            <ion-icon name="wifi"></ion-icon>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <!-- <i class="fa-solid fa-battery-full fa-lg"></i> -->
+            <ion-icon id="battery" name="battery-full"></ion-icon>
+            <ion-icon name="flash"></ion-icon>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <p class="screen-header__header__title">Find</p>
+        <div class="screen-header__header__icons">
+            <span>
+                <ion-icon name="search-outline"></ion-icon>
+            </span>
+            <span>
+                <span class="far-badge"></span>
+                <ion-icon name="settings-outline"></ion-icon>
+            </span>
+
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <!-- find-icons -->
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <ion-icon name="qr-code-outline"></ion-icon>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <ion-icon name="person-add-outline"></ion-icon>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <ion-icon name="finger-print-outline"></ion-icon>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Invite</span>
+            </div>
+        </div>
+
+        <!-- recommended-friends -->
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+
+        <!-- open-chat -->
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>
+                    Go to Openchat Home
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </span>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">Programming</h5>
+                    <h6 class="open-post__hashtags">#c#java#python</h6>
+                    <div class="open-post__members">
+                        <img src="img/github.jpg" />
+                        <span class="open-post__member-count">3,524 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="img/open-chat-1.jpg">
+                        <div class="open-post__heart-count">
+                            <ion-icon name="heart"></ion-icon>
+                            <span>954</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="/friends.html">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="/chats.html">
+                    <span class="nav__notification">1</span>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <ion-icon name="search"></ion-icon>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <span class="basic-badge"></span>
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
