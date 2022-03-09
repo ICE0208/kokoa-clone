@@ -83,6 +83,7 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    position: relative;
 }
 
 .user-component__title {
@@ -99,6 +100,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .user-component__title--not-bold {
@@ -109,3 +112,21 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.user-component__column .file-icon {
+    font-size: 40px;
+}
+
+.user-component__exclamation {
+    color: red;
+    margin-left: 5px;
+    border: 1px solid red;
+    padding: 5px;
+    width: 6px;
+    height: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+}
