@@ -9,7 +9,7 @@
     <title>Chat - KoKoa Clone</title>
 </head>
 
-<body class="chat-screen-color">
+<body class="chat-screen-color" id="chat-screen">
     <div class="status-bar chat-screen-color">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -23,18 +23,18 @@
             <span>100%</span>
             <!-- <i class="fa-solid fa-battery-full fa-lg"></i> -->
             <ion-icon id="battery" name="battery-full"></ion-icon>
-            <ion-icon name="flash"></ion-icon>
+            <ion-icon id="flash" name="flash"></ion-icon>
         </div>
     </div>
 
     <header class="alt-header chat-screen-color">
         <div class="alt-header__column">
-            <a href="more.html">
+            <a href="chats.html">
                 <ion-icon name="chevron-back-outline"></ion-icon>
             </a>
         </div>
         <div class="alt-header__column">
-            <h1 class="alt-header__ttile">Python</h1>
+            <h1 class="alt-header__title">Python</h1>
         </div>
         <div class="alt-header__column">
             <span><ion-icon name="search-outline"></ion-icon></span>
@@ -42,7 +42,22 @@
         </div>
     </header>
 
-    <main class="main-screen">
+    <main class="main-screen main-chat">
+
+        <div class="chat__timestamp">
+            Tuesday, June 30, 2020
+        </div>
+
+        <div class="message-row">
+            <img src="img/python.png">
+            <div class="message-row__content">
+                <span class="message__author">Python</span>
+                <div class="message__info">
+                    <span class="message__bubble">I'm better than Java</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
 
     </main>
 

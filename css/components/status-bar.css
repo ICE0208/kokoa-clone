@@ -39,3 +39,7 @@
 .status-bar__column:last-child #battery {
     margin: 0px 3px;
 }
+
+#flash {
+    font-size: 15px;
+}
