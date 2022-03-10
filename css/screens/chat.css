@@ -1,5 +1,5 @@
 .main-chat {
-    margin-top: 25px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +29,7 @@
 .message-row {
     display: flex;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .message-row img {
@@ -58,11 +59,26 @@
     border-radius: 14px;
     border-top-left-radius: 0px;
     font-size: 18px;
-    margin-right: 5px;
 }
 
 .message__time {
     font-size: 13px;
     padding-bottom: 3px;
-    margin-left: 4px;
+    margin: 0px 10px;
+}
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    background-color: var(--yellow);
+    border-radius: 14px;
+    border-top-right-radius: 0px;
+    max-width: 55vw;
+    word-wrap: break-word;
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
 }
