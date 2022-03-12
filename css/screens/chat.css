@@ -10,7 +10,6 @@
 }
 
 #chat-screen {
-    height: 11000vh;
 }
 
 #chat-screen .alt-header__title {
@@ -81,4 +80,92 @@
 
 .message-row--own .message__info {
     flex-direction: row-reverse;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display : flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reply ion-icon {
+    opacity: 0.5;
+    padding: 10px;
+}
+
+.reply .reply__column:first-child {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.reply .reply__column:first-child ion-icon {
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    color: black;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+}
+
+.reply input {
+    height: 30px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+    box-sizing : border-box;
+}
+
+.reply__column:last-child > ion-icon,
+.reply__column:last-child button {
+    position: absolute;
+    right: 4px;
+    top: 1.3px;
+    text-align: center;
+    padding: 0px;
+}
+
+.reply__column:last-child > ion-icon {
+    right: 40px;
+    top: 2px;
+    font-size: 25px;
+}
+
+.reply__column button {
+    background-color: var(--yellow);
+    border: none;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    color: black;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.reply__column button ion-icon {
+    opacity: 1;
+    font-size: 15px;
+    padding: 0px;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
 }
