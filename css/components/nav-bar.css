@@ -12,6 +12,32 @@
     width: 100%;
 }
 
+@keyframes appearBtnAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.nav__btn {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+    animation-delay: 0.08s;
+}
+.nav__btn:nth-child(3) {
+    animation-delay: 0.16s;
+}
+.nav__btn:nth-child(4) {
+    animation-delay: 0.24s;
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -20,6 +46,19 @@
 .nav__link {
     color: #2e363e;
     position: relative;
+}
+
+
+@keyframes notificationAnimation {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-4px) rotateY(360deg);
+    }
+    100%{
+        transform: none;
+    }
 }
 
 .nav__notification {
@@ -36,6 +75,7 @@
     left: 17px;
     bottom: 18px;
     z-index: 1;
+    animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .nav__extra-noti {
