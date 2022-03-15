@@ -107,6 +107,7 @@
     padding: 5px 25px;
     align-items: center;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply ion-icon {
@@ -134,6 +135,7 @@
 .reply .reply__column:last-child {
     width: 95%;
     position: relative;
+    transition: all .3s ease-in-out;
 }
 
 .reply input {
@@ -142,6 +144,7 @@
     border: var(--main-border);
     border-radius: 20px;
     box-sizing : border-box;
+    transition: all .3s ease-in-out;
 }
 
 .reply__column:last-child > ion-icon,
@@ -183,4 +186,35 @@
 .reply__column button:focus,
 .reply__column button:active {
     outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply #smile-icon,
+.reply button {
+    transition: all 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child {
+    opacity: 0;
+    width: 0;
+    padding: 0;
+}
+
+.reply:focus-within #smile-icon,
+.reply:focus-within button {
+    opacity: 0;
+}
+
+.reply:focus-within .reply__column:last-child {
+    width: 100%;
+    transform: translateY(-80px);
+}
+
+.reply:focus-within {
+    transform: translateY(80px);
+    bottom: 5px;
+}
+
+.reply input {
+    padding-left: 10px;
 }
