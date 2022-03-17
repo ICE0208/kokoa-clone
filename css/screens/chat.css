@@ -19,7 +19,7 @@
 }
 
 .chat-screen-color {
-    background-color: #abc1d1 !important;
+    background-color: #abc1d1;
 }
 
 
@@ -146,7 +146,7 @@
 .reply__column:last-child > ion-icon,
 .reply__column:last-child button {
     position: absolute;
-    right: 4px;
+    right: 2px;
     top: 1.3px;
     text-align: center;
     padding: 0px;

@@ -1,0 +1,32 @@
+#no-landscape {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    display: none;
+}
+
+@media screen and (orientation: landscape){
+    #no-landscape {
+        display: flex;
+    }
+    body {
+        background-color: var(--yellow) !important;
+        overflow: hidden !important;
+    }
+    nav {
+        display: none !important;
+    }
+    .reply {
+        display: none !important;
+    }
+    .chat-screen-color {
+        background-color: var(--yellow) !important;
+    }
+}
